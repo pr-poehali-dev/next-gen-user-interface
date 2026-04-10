@@ -6,7 +6,9 @@ export const sections = [
     subtitle: <Badge variant="outline" className="text-white border-white">Уже доступно</Badge>,
     title: "МАКС — общайся свободно.",
     showButton: true,
-    buttonText: 'Скачать приложение'
+    buttonText: 'Перейти на сайт',
+    showSecondButton: true,
+    secondButtonText: 'Скачать приложение'
   },
   {
     id: 'about',
