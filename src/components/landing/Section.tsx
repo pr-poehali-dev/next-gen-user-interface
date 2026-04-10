@@ -17,6 +17,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
       )}
       <motion.h2
         className="text-4xl md:text-6xl lg:text-[5rem] xl:text-[6rem] font-bold leading-[1.1] tracking-tight max-w-4xl text-white"
+        style={{ textShadow: '0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.4), 2px 2px 8px rgba(0,0,0,0.6)' }}
         initial={{ opacity: 0, y: 50 }}
         animate={isActive ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
@@ -26,6 +27,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
       {content && (
         <motion.p
           className="text-lg md:text-xl lg:text-2xl max-w-2xl mt-6 text-neutral-400"
+          style={{ textShadow: '0 0 10px rgba(255,255,255,0.3), 2px 2px 6px rgba(0,0,0,0.5)' }}
           initial={{ opacity: 0, y: 50 }}
           animate={isActive ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
