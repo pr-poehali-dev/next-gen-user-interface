@@ -44,7 +44,11 @@ export default function LandingPage() {
   return (
     <Layout>
       <div className="fixed top-0 left-0 z-30 p-6">
-        <span className="text-white font-bold text-2xl tracking-widest">MAX</span>
+        <span
+          className="text-white font-bold text-2xl tracking-widest cursor-pointer"
+          style={{ textShadow: '0 0 20px rgba(255,255,255,0.8), 0 0 40px rgba(255,255,255,0.4), 2px 2px 8px rgba(0,0,0,0.6)' }}
+          onClick={() => window.open('https://max.ru/', '_blank')}
+        >MAX</span>
       </div>
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
         {sections.map((section, index) => (
