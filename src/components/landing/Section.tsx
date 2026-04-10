@@ -44,6 +44,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
             variant="outline"
             size="lg"
             className="text-white bg-transparent border-white hover:bg-white hover:text-red-700 transition-colors"
+            onClick={() => window.open('https://max.ru/', '_blank')}
           >
             {buttonText}
           </Button>
